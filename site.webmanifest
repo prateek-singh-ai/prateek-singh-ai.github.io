@@ -1,0 +1,16 @@
+{
+    "name": "Prateek Singh Portfolio",
+    "short_name": "Prateek",
+    "description": "AI/ML Engineer & Data Analyst Portfolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a0f",
+    "theme_color": "#3b82f6",
+    "icons": [
+        {
+            "src": "assets/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}

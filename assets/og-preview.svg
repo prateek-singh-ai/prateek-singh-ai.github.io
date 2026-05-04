@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+    <defs>
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0a0a0f"/>
+            <stop offset="100%" stop-color="#16161f"/>
+        </linearGradient>
+        <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3b82f6"/>
+            <stop offset="50%" stop-color="#8b5cf6"/>
+            <stop offset="100%" stop-color="#06b6d4"/>
+        </linearGradient>
+        <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#f1f5f9"/>
+            <stop offset="100%" stop-color="#cbd5e1"/>
+        </linearGradient>
+        <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="orbGlow2" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="cornerGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.18"/>
+            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+            <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#3b82f6" stroke-width="0.5" opacity="0.07"/>
+        </pattern>
+        <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- ============ BACKGROUND ============ -->
+    <rect width="1200" height="630" fill="url(#bgGrad)"/>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+    <ellipse cx="1000" cy="100" rx="450" ry="280" fill="url(#cornerGlow)"/>
+    <ellipse cx="100" cy="550" rx="400" ry="240" fill="url(#cornerGlow)" opacity="0.7"/>
+
+    <!-- Subtle vertical divider between zones -->
+    <line x1="720" y1="80" x2="720" y2="550" stroke="url(#accentGrad)" stroke-width="1" opacity="0.15"/>
+
+    <!-- ============ LEFT ZONE: TEXT (x: 60–700) ============ -->
+
+    <!-- Logo monogram -->
+    <g transform="translate(60, 70)">
+        <rect width="76" height="76" rx="16" fill="#0a0a0f" stroke="url(#accentGrad)" stroke-width="3"/>
+        <text x="38" y="53" text-anchor="middle" font-family="monospace" font-size="34" font-weight="800"
+              fill="url(#accentGrad)" textLength="44" lengthAdjust="spacingAndGlyphs">PS</text>
+    </g>
+
+    <!-- Status badge — generously wide, locked text -->
+    <g transform="translate(150, 90)">
+        <rect width="320" height="38" rx="19" fill="#22c55e" fill-opacity="0.12"
+              stroke="#22c55e" stroke-opacity="0.45" stroke-width="1.5"/>
+        <circle cx="22" cy="19" r="6" fill="#22c55e" filter="url(#softGlow)"/>
+        <text x="42" y="25" font-family="sans-serif" font-size="15" font-weight="600" fill="#22c55e"
+              textLength="260" lengthAdjust="spacingAndGlyphs">Available for opportunities</text>
+    </g>
+
+    <!-- Name (locked width, large) -->
+    <text x="60" y="270" font-family="sans-serif" font-size="86" font-weight="800"
+          fill="url(#nameGrad)" textLength="490" lengthAdjust="spacingAndGlyphs">Prateek Singh</text>
+
+    <!-- Accent underline -->
+    <rect x="60" y="290" width="120" height="5" rx="2.5" fill="url(#accentGrad)"/>
+
+    <!-- Title -->
+    <text x="60" y="355" font-family="sans-serif" font-size="36" font-weight="700"
+          fill="url(#accentGrad)" textLength="640" lengthAdjust="spacingAndGlyphs">AI/ML Engineer &amp; Data Analyst</text>
+
+    <!-- Tagline -->
+    <text x="60" y="405" font-family="sans-serif" font-size="20" font-weight="400"
+          fill="#94a3b8" font-style="italic" textLength="540" lengthAdjust="spacingAndGlyphs">"Good things happen to those who build them"</text>
+
+    <!-- Stats row -->
+    <g transform="translate(60, 470)" font-family="sans-serif">
+        <text x="0" y="40" font-size="46" font-weight="800" fill="#f1f5f9"
+              textLength="60" lengthAdjust="spacingAndGlyphs">7+</text>
+        <text x="0" y="68" font-size="12" font-weight="700" fill="#64748b" letter-spacing="2"
+              textLength="170" lengthAdjust="spacingAndGlyphs">YEARS EXPERIENCE</text>
+
+        <line x1="200" y1="20" x2="200" y2="68" stroke="#2a2a3a" stroke-width="1"/>
+
+        <text x="225" y="40" font-size="46" font-weight="800" fill="#f1f5f9"
+              textLength="28" lengthAdjust="spacingAndGlyphs">3</text>
+        <text x="225" y="68" font-size="12" font-weight="700" fill="#64748b" letter-spacing="2"
+              textLength="110" lengthAdjust="spacingAndGlyphs">COUNTRIES</text>
+
+        <line x1="365" y1="20" x2="365" y2="68" stroke="#2a2a3a" stroke-width="1"/>
+
+        <text x="390" y="40" font-size="46" font-weight="800" fill="#f1f5f9"
+              textLength="80" lengthAdjust="spacingAndGlyphs">1M+</text>
+        <text x="390" y="68" font-size="12" font-weight="700" fill="#64748b" letter-spacing="2"
+              textLength="140" lengthAdjust="spacingAndGlyphs">DOCS INDEXED</text>
+    </g>
+
+    <!-- ============ RIGHT ZONE: AI VISUALIZATION (x: 740–1180) ============ -->
+    <g transform="translate(740, 90)">
+        <!-- Outer rotating ring -->
+        <circle cx="220" cy="220" r="200" fill="none" stroke="url(#accentGrad)" stroke-width="1.5"
+                stroke-dasharray="4 8" opacity="0.4"/>
+        <circle cx="220" cy="220" r="160" fill="none" stroke="url(#accentGrad)" stroke-width="1"
+                stroke-dasharray="2 6" opacity="0.5"/>
+        <circle cx="220" cy="220" r="120" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.3"/>
+
+        <!-- Central glow -->
+        <circle cx="220" cy="220" r="180" fill="url(#orbGlow)" opacity="0.5"/>
+        <circle cx="220" cy="220" r="100" fill="url(#orbGlow2)" opacity="0.6"/>
+
+        <!-- Connection lines (neural net feel) -->
+        <g stroke="#3b82f6" stroke-width="1" opacity="0.35" fill="none">
+            <line x1="220" y1="220" x2="80" y2="120"/>
+            <line x1="220" y1="220" x2="360" y2="120"/>
+            <line x1="220" y1="220" x2="60" y2="280"/>
+            <line x1="220" y1="220" x2="380" y2="280"/>
+            <line x1="220" y1="220" x2="140" y2="380"/>
+            <line x1="220" y1="220" x2="300" y2="380"/>
+            <line x1="80" y1="120" x2="360" y2="120"/>
+            <line x1="60" y1="280" x2="380" y2="280"/>
+            <line x1="140" y1="380" x2="300" y2="380"/>
+        </g>
+
+        <!-- Outer nodes -->
+        <g>
+            <circle cx="80" cy="120" r="8" fill="#3b82f6" filter="url(#softGlow)"/>
+            <circle cx="360" cy="120" r="8" fill="#8b5cf6" filter="url(#softGlow)"/>
+            <circle cx="60" cy="280" r="10" fill="#06b6d4" filter="url(#softGlow)"/>
+            <circle cx="380" cy="280" r="10" fill="#3b82f6" filter="url(#softGlow)"/>
+            <circle cx="140" cy="380" r="8" fill="#8b5cf6" filter="url(#softGlow)"/>
+            <circle cx="300" cy="380" r="8" fill="#06b6d4" filter="url(#softGlow)"/>
+        </g>
+
+        <!-- Center hub (logo-style) -->
+        <circle cx="220" cy="220" r="58" fill="#0a0a0f" stroke="url(#accentGrad)" stroke-width="3"/>
+        <circle cx="220" cy="220" r="48" fill="#16161f"/>
+        <text x="220" y="232" text-anchor="middle" font-family="monospace" font-size="28" font-weight="800"
+              fill="url(#accentGrad)" textLength="50" lengthAdjust="spacingAndGlyphs">AI</text>
+
+        <!-- Floating tech labels around the orb -->
+        <g font-family="monospace" font-size="13" font-weight="700">
+            <g transform="translate(0, 100)">
+                <rect width="98" height="28" rx="6" fill="#0a0a0f" stroke="#3b82f6" stroke-opacity="0.5"/>
+                <text x="49" y="19" text-anchor="middle" fill="#3b82f6"
+                      textLength="76" lengthAdjust="spacingAndGlyphs">Python</text>
+            </g>
+            <g transform="translate(322, 100)">
+                <rect width="118" height="28" rx="6" fill="#0a0a0f" stroke="#8b5cf6" stroke-opacity="0.5"/>
+                <text x="59" y="19" text-anchor="middle" fill="#8b5cf6"
+                      textLength="96" lengthAdjust="spacingAndGlyphs">LangChain</text>
+            </g>
+            <g transform="translate(-15, 260)">
+                <rect width="120" height="28" rx="6" fill="#0a0a0f" stroke="#06b6d4" stroke-opacity="0.5"/>
+                <text x="60" y="19" text-anchor="middle" fill="#06b6d4"
+                      textLength="98" lengthAdjust="spacingAndGlyphs">Bedrock</text>
+            </g>
+            <g transform="translate(330, 260)">
+                <rect width="76" height="28" rx="6" fill="#0a0a0f" stroke="#3b82f6" stroke-opacity="0.5"/>
+                <text x="38" y="19" text-anchor="middle" fill="#3b82f6"
+                      textLength="54" lengthAdjust="spacingAndGlyphs">RAG</text>
+            </g>
+            <g transform="translate(80, 360)">
+                <rect width="80" height="28" rx="6" fill="#0a0a0f" stroke="#8b5cf6" stroke-opacity="0.5"/>
+                <text x="40" y="19" text-anchor="middle" fill="#8b5cf6"
+                      textLength="58" lengthAdjust="spacingAndGlyphs">AWS</text>
+            </g>
+            <g transform="translate(240, 360)">
+                <rect width="120" height="28" rx="6" fill="#0a0a0f" stroke="#06b6d4" stroke-opacity="0.5"/>
+                <text x="60" y="19" text-anchor="middle" fill="#06b6d4"
+                      textLength="98" lengthAdjust="spacingAndGlyphs">GenAI</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- ============ FOOTER URL ============ -->
+    <g transform="translate(60, 590)">
+        <circle cx="6" cy="-5" r="4" fill="#22c55e"/>
+        <text x="20" y="0" font-family="monospace" font-size="15" font-weight="600" fill="#94a3b8"
+              textLength="280" lengthAdjust="spacingAndGlyphs">prateek-singh-ai.github.io</text>
+    </g>
+
+    <!-- Decorative corner brackets -->
+    <g stroke="url(#accentGrad)" stroke-width="2" fill="none" opacity="0.6">
+        <path d="M 30 30 L 30 60 M 30 30 L 60 30"/>
+        <path d="M 1170 30 L 1170 60 M 1170 30 L 1140 30"/>
+        <path d="M 30 600 L 30 570 M 30 600 L 60 600"/>
+        <path d="M 1170 600 L 1170 570 M 1170 600 L 1140 600"/>
+    </g>
+</svg>
